@@ -1,0 +1,36 @@
+header {
+    max-width: $header-box-width;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 3px solid $border-color;
+    border-radius: 1rem;
+}
+
+.rps-text {
+    font-size: $rps-font-size;
+    text-align: left;
+    line-height: 2rem;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.score-box {
+    width: $score-box-size;
+    height: $score-box-size;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: $bg-white;
+    border-radius: 0.5rem;
+    color: $score-color;
+}
+
+.score-result {
+    font-size: $h1-font-size;
+    color: $score-color;
+}
