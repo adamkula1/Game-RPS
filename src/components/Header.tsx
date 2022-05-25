@@ -3,6 +3,7 @@ import React from 'react'
 const Header = () => {
   return (
     <header>
+      <section className='header-box'>
         <ul className='rps-text'>
             <li>Rock</li>
             <li>Paper</li>
@@ -13,6 +14,7 @@ const Header = () => {
             <span>Score</span>
             <h1 className='score-result'>0</h1>
         </section>
+      </section>
     </header>
   )
 }

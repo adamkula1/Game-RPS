@@ -12,3 +12,9 @@ footer {
     letter-spacing: 0.2rem;
     text-transform: uppercase;
 }
+
+.rules:hover {
+    background-color: hsla(0,0%,100%,.8);
+    color: #3b4363;
+    cursor: pointer;
+}
