@@ -1,4 +1,8 @@
 header {
+    padding: 0 1rem;
+}
+
+.header-box {
     max-width: $header-box-width;
     margin: 0 auto;
     margin-top: 2rem;
@@ -33,4 +37,10 @@ header {
 .score-result {
     font-size: $h1-font-size;
     color: $score-color;
+}
+
+@media screen and (max-width: 375px) {
+    .rps-text {
+        font-size: 2rem;
+    }
 }
