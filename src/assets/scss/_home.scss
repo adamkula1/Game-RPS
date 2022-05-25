@@ -1,7 +1,7 @@
 main {
     display: flex;
     align-items: center;
-    height: 40rem;
+    height: 39rem;
 }
 
 .choice {
@@ -62,4 +62,105 @@ main {
     border-color: #dc2e4e;
     box-shadow: inset 0 5px 6px grey, 0 8px #a11b34;
     transform: translate(0, -7rem);
+}
+
+@media screen and (max-width: 812px) {
+    main {
+        height: 30rem;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    header {
+        margin-bottom: 3rem;
+    }
+
+    .icon-triangle {
+        width: 270px;
+    }
+
+    .icon {
+        height: 120px;
+        width: 120px;
+        border-width: 12px;
+    }
+
+    .icon-paper {
+        box-shadow: inset 0 2.5px 6px grey, 0 4px #0d31e3;
+    }
+    .icon-scissors {
+        box-shadow: inset 0 2.5px 6px grey, 0 4px #a46e0a;
+    }
+
+    .icon-rock {
+        box-shadow: inset 0 2.5px 6px grey, 0 4px #a11b34;
+    }
+
+    .choice {
+        height: 32rem;
+    }
+}
+
+@media screen and (max-width: 509px) {
+    .icon-triangle {
+        width: 230px;
+    }
+
+    .icon {
+        height: 105px;
+        width: 105px;
+        border-width: 10px;
+    }
+}
+
+@media screen and (max-width: 439px) {
+    .icon-triangle {
+        width: 170px;
+    }
+
+    .icon {
+        height: 90px;
+        width: 90px;
+        border-width: 6px;
+    }
+
+    .choice {
+        height: 25rem;
+    }
+
+    .icon-paper {
+        transform: translate(4rem, 3rem);
+    }
+
+    .icon-scissors {
+        transform: translate(-4rem, 3rem);
+    }
+
+    .icon-rock {
+        transform: translate(0rem, -4rem);
+    }
+}
+
+@media screen and (max-width: 349px) {
+    .icon-triangle {
+        width: 150px;
+    }
+
+    .icon {
+        height: 85px;
+        width: 85px;
+        border-width: 5px;
+    }
+
+    .icon-paper {
+        transform: translate(2.5rem, 2.5rem);
+    }
+
+    .icon-scissors {
+        transform: translate(-2.5rem, 2.5rem);
+    }
+
+    .icon-rock {
+        transform: translate(0rem, -2.5rem);
+    }
 }
