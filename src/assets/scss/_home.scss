@@ -67,7 +67,8 @@ main {
 .icon-paper:hover,
 .icon-scissors:hover,
 .icon-rock:hover {
-    background-color: #00ffa1;
+    background-color: #00ff03;
+    transition: 1s;
 }
 
 @media screen and (max-width: 812px) {
