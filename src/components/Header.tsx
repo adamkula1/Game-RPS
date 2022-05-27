@@ -1,6 +1,8 @@
-import React from 'react'
+interface Props {
+  score: number;
+}
 
-const Header = ({score}:any) => {
+const Header: React.FC<Props> = ({score}) => {
   return (
     <header>
       <section className='header-box'>

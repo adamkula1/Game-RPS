@@ -4,9 +4,9 @@ import Header from './components/Header'
 import Home from './components/Home'
 import PlayGround from './components/PlayGround'
 
-const App = () => {
-  const [userChoice, setUserChoice] = useState("");
-  const [score, setScore] = useState(0);
+const App: React.FC = () => {
+  const [userChoice, setUserChoice] = useState<string>("");
+  const [score, setScore] = useState<number>(0);
 
   return (
     <>

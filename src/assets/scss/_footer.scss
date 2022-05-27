@@ -14,7 +14,7 @@ footer {
 }
 
 .rules:hover {
-    background-color: hsla(0,0%,100%,.8);
-    color: #3b4363;
+    background-color: $bg-white;
+    color: $dark-text;
     cursor: pointer;
 }

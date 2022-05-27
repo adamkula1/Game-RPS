@@ -1,15 +1,18 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+interface Props {
+  userChoice: string,
+  score: number,
+  setScore: React.Dispatch<React.SetStateAction<number>>,
+}
 
-
-const PlayGround = ({userChoice, score, setScore}:any) => {
-  const [computerChoice, setComputerChoice] = useState(null);
-  const [result, setResult] = useState("");
-
-  const [counter, setCounter] = useState(3);
+const PlayGround: React.FC<Props> = ({userChoice, score, setScore}) => {
+  const [computerChoice, setComputerChoice] = useState<string>("");
+  const [result, setResult] = useState<string>("");
+  const [counter, setCounter] = useState<number>(3);
 
   const newOponentPicked = () => {
-    const choices:any = ["rock", "paper", "scissors"];
+    const choices: string[] = ["rock", "paper", "scissors"];
     setComputerChoice(choices[Math.floor(Math.random() * 3)]);
   };
 
@@ -43,7 +46,7 @@ const PlayGround = ({userChoice, score, setScore}:any) => {
   };
 
   useEffect(() => {
-    const timer:any =
+    const timer: any =
       counter > 0
         ? setInterval(() => {
             setCounter(counter - 1);
@@ -54,9 +57,6 @@ const PlayGround = ({userChoice, score, setScore}:any) => {
       clearInterval(timer);
     };
   }, [counter, computerChoice]);
-
-  
-
 
   return (
     <section className='game'>
