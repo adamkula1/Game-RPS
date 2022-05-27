@@ -1,0 +1,42 @@
+.modal-container{
+    max-width: 500px;
+    position: absolute;
+    margin: 0 auto;
+    top: 15rem;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+
+    .modal-box{
+        color: $dark-text;
+        background-color: $bg-white;
+        border-radius: 8px;
+        padding: 2rem;
+
+        img {
+            width: 100%;
+        }
+
+        .modal__header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+
+            h1 {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    button{
+        background:none ;
+        border: none;
+        align-self: center;
+        color: $dark-text;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+    }
+}

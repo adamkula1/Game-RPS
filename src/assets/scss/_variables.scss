@@ -1,10 +1,17 @@
-//colors
+//Font-Size
+$rps-font-size: 2.5rem;
+$h1-font-size: 3.5rem;
+
+//Colors
 $scissors-gradient: hsl(39, 89%, 49%);
 $paper-gradient: hsl(230, 89%, 62%);
 $rock-gradient: hsl(349, 71%, 52%);
+$border-color: #606e85;
+$bg-white: #fafafa;
+$score-color: #3b4363;
+$hover-color: #00ff03;
 
-
-//text
+//Text
 $dark-text: hsl(229, 25%, 31%);
 $score-text: hsl(229, 64%, 46%);
 $header-outline: hsl(217, 16%, 45%);
@@ -16,3 +23,7 @@ $background-gradient: radial-gradient(circle,#1f3756,#141539);;
 $imageRock:"../src/assets/images/icon-rock.svg";
 $imagePaper:"../src/assets/images/icon-paper.svg";
 $imageScissors:"../src/assets/images/icon-scissors.svg";
+
+//width
+$score-box-size: 6.875rem;
+$header-box-width: 43.75rem;

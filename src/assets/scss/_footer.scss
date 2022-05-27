@@ -1,0 +1,20 @@
+footer {
+    text-align: center;
+}
+
+.rules {
+    background: none;
+    padding: 0.6rem 1.8rem;
+    border-radius: 0.4rem;
+    font-weight: 700;
+    color: $bg-white;
+    border: 2px solid #a3a1a2;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.rules:hover {
+    background-color: $bg-white;
+    color: $dark-text;
+    cursor: pointer;
+}
