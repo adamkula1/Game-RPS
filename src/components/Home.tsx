@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
 import Triangle from "../assets/images/bg-triangle.svg";
 import Footer from './Footer';
+interface Props {
+  setUserChoice: React.Dispatch<React.SetStateAction<string>>;
+}
 
-
-const Home = ({setUserChoice}:any) => {
+const Home: React.FC<Props> = ({setUserChoice}) => {
 
   return (
     <>
