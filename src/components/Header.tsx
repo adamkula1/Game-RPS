@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Header = () => {
+const Header = ({score}:any) => {
   return (
     <header>
       <section className='header-box'>
@@ -12,7 +12,7 @@ const Header = () => {
 
         <section className='score-box'>
             <span>Score</span>
-            <h1 className='score-result'>0</h1>
+            <h1 className='score-result'>{score}</h1>
         </section>
       </section>
     </header>

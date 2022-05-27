@@ -1,17 +1,18 @@
-import React from 'react'
+import { Link } from 'react-router-dom';
 import Triangle from "../assets/images/bg-triangle.svg";
-import Paper from "../assets/images/icon-paper.svg";
 import Footer from './Footer';
 
-const Home = () => {
+
+const Home = ({setUserChoice}:any) => {
+
   return (
     <>
       <main>
           <section className='choice'>
               <img className='icon-triangle' src={Triangle} alt="Triangle" />
-              <div className='icon icon-paper'></div>
-              <div className='icon icon-scissors'></div>
-              <div className='icon icon-rock'></div>
+              <div onClick={() => setUserChoice("paper")} className='button-choice'><Link to="/playground" className='icon icon-paper'></Link></div>
+              <div onClick={() => setUserChoice("scissors")} className='button-choice'><Link to="/playground" className='icon icon-scissors'></Link></div>
+              <div onClick={() => setUserChoice("rock")} className='button-choice'><Link to="/playground" className='icon icon-rock'></Link></div>
           </section>
       </main>
       <Footer />

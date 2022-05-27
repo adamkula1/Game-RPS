@@ -71,6 +71,10 @@ main {
     transition: 1s;
 }
 
+.button-choice {
+    display: contents;
+}
+
 @media screen and (max-width: 812px) {
     main {
         height: 30rem;

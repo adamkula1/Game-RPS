@@ -5,15 +5,16 @@ import Home from './components/Home'
 import PlayGround from './components/PlayGround'
 
 const App = () => {
-  // const [myChoice, setMyChoice] = useState("");
+  const [userChoice, setUserChoice] = useState("");
+  const [score, setScore] = useState(0);
 
   return (
     <>
-      <Header />
+      <Header score={score} />
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='playground' element={<PlayGround />} />
+          <Route path='/' element={<Home setUserChoice={setUserChoice} />} />
+          <Route path='playground' element={<PlayGround userChoice={userChoice} score={score} setScore={setScore} />} />
         </Routes>
       </BrowserRouter>
     </>
